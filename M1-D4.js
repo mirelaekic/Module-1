@@ -5,39 +5,34 @@ ASSIGNMENT RULES
 - You can ask for tutor's help
 - You can google / use StackOverflow BUT we suggest you to use just the material provided
 */
-
 /* EXERCISE 1
-Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
+Write a function "area" which receives 2 parameters (l1,l2) 
+and calculate the area of the rectangle.
 */
 
-// const area = (a=11, b=12) => a * b; 
-
-// area();
-
-// 
-
-const area = function (x) {
-    const result = x * x;
+const area = function (a, b) {
+    const result = a * b;
 
     return result;
-};
+}
 
-console.log(area(11) + area(12));
+console.log(area(11, 12));
 
 /* EXERCISE 2
-Write a function "crazySum" which receives two given integers. If the two values are same, then returns triple their sum.
+Write a function "crazySum" which receives two given integers. 
+If the two values are same, then returns triple their sum.
 */
 
-function crazySum(x, y) {
-    if (x === y) {
-      return 3 * (x + y);
-    } else {
-      return x + y;
-    }
-  }
-  console.log(crazySum(34, 55));
-  console.log(crazySum(22, 22));
-    
+function crazySum (a, b) {
+    if(a === b)
+        return 3 * (a + b); 
+    else 
+        return ("not the same value");
+}
+
+console.log(crazySum(5,5));
+console.log(crazySum(3,4));
+
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
 absolute difference between a given number and 19. 
@@ -46,18 +41,16 @@ the specified
 number is greater than 19.
 */
 
-function crazyDiff(x1) {
-    if (x1 <= 19) {
-        return (x1 - 19);
+function crazyDiff (x) {
+    if (19 != x) {
+        return 3 * (19 - x);
+    } else {
+        return ("the number 19 is greater then value x")
     }
-    else{
-        return (x1 - 19) * 3
-    }
-}
+ }
 
 console.log(crazyDiff(20));
-console.log(crazyDiff(19));
-console.log(crazyDiff(23));
+
 
 
 /* EXERCISE 4
@@ -70,6 +63,19 @@ function boundary(N) {
 
 console.log(boundary(100));
 console.log(boundary(400));
+
+// Alternative 
+
+/* function boundary (N) {
+    if ((20 > N) || (100 < N) || (N === 400)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(boundary(300)); */ 
+
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
