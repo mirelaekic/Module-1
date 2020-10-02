@@ -57,25 +57,16 @@ console.log(crazyDiff(20));
 Write a function "boundary" which accept an integer N and returns true if N is within 20 and 100 (included) or equal to 400.
 */
 
-function boundary(N) {
-    if (((100 - N) <= 20) || ((400 - N) <= 20));
-}
-
-console.log(boundary(100));
-console.log(boundary(400));
-
-// Alternative 
-
-/* function boundary (N) {
-    if ((20 > N) || (100 < N) || (N === 400)) {
+function boundary (N) {
+    if ((N === 400) || (N >= 20 && N <= 100)) {
         return true;
     } else {
         return false;
     }
 }
-
-console.log(boundary(300)); */ 
-
+console.log(boundary(400)); // true
+console.log(boundary(15)); // false
+console.log(boundary(80)); // true  
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string S. Add to S "Strive" in front of a given string, if the given string begins with "Strive" then return the original string.
