@@ -9,6 +9,13 @@ ASSIGNMENT RULES
 /* EXERCISE 1
 Write a function "area" which receives 2 parameters (l1,l2) and calculate the area of the rectangle.
 */
+/*
+const rectangle = function (l1, l2) {
+    const result = l1 * l2;
+
+    return result;
+}
+console.log("The area of rectangle is: " + rectangle(l2, 6)); */
 
 // const area = (a=11, b=12) => a * b; 
 
@@ -36,7 +43,7 @@ function crazySum(x, y) {
     }
   }
   console.log(crazySum(34, 55));
-  console.log(crazySum(22, 22));
+  console.log("crazySum:", crazySum(22, 22));
     
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the 
@@ -65,8 +72,10 @@ Write a function "boundary" which accept an integer N and returns true if N is w
 */
 
 function boundary(N) {
-    if (((100 - N) <= 20) || ((400 - N) <= 20));
-}
+    if (((100 - N) <= 20) || ((400 - N) <= 20)); {
+        return true;
+    } 
+
 
 console.log(boundary(100));
 console.log(boundary(400));
@@ -125,13 +134,27 @@ Write a function "upperFirst" to capitalize the first letter of each word of a g
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+const cutString= (S) => S.substring(1, S.length-2);
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10
 */
 
-
+const giveMeRandom = (n) => {
+    let randomArray = [];
+  
+    for (let i = 0; i < n; i++) {
+      let randomNumber = Math.floor(Math.random() * 10);
+      randomArray.push(randomNumber);
+    }
+  
+    console.log("Random Array Generating...");
+    console.log(randomArray);
+    console.log("Number of Entries: ", randomArray.length);
+  };
+  
+  giveMeRandom(30);
+  
 
 /* WRITE YOUR CODE HERE */
 
