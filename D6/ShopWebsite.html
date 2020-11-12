@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Shop</title>
+    <style>
+        body {
+            background-color: rgb(216, 136, 111);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+        }
+        table {
+            width: 90%;
+            text-align: left;
+            margin-right: 8%;
+            margin-left: 4%;
+        }
+        #title {
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            font-size: 30px;
+            color:rgb(46, 39, 39);
+        }
+        tr, th {
+            width: 15%;
+            text-align: center;
+        }
+        tr {
+            border: 6px solid  rgb(231, 221, 221);
+            border-radius: inherit;
+            border-spacing: 0ch;
+            background-color: rgb(231, 221, 221);
+            border-color:rgb(231, 221, 221);
+            margin: 5%;
+        }
+
+        .info {
+            margin-top: 3%;
+            margin-bottom: 3%;
+            text-align: center;
+        }
+        .map {
+            text-align:center;
+        }
+
+        footer {
+            background-color: white;
+            text-align: center;
+            padding:3%;
+        }
+        img {
+            image-orientation: inherit;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="title">Smartphone Shop</h1>
+    </div>
+    <table>
+        <tr>
+            <th>TOP 5 PRODUCTS</th>
+        </tr>
+        <tr>
+            <th>iPhone 11</th>
+            <td>Best phone for most people</td> 
+            <td>The best smartphone for people who don't want to spend a bundle, the iPhone 11 has killer dual cameras and a cheaper price than the iPhone 11 Pro. For a very reasonable $699, the iPhone 11 offers amazingly good low-light photos via its Night Mode, and there’s a new ultra-wide lens that lets you fit in more subjects or scene with its 120-degree field of view. Selfies get a serious upgrade, too, with a 12-MP camera that automatically switches to a wider view when you turn the phone to landscape mode</td>
+            <th>PRICE €610.06</th>
+            <td><img onmouseover="toggleShowImages(this)" src="images/iphone11.jpg" alt="iPhone 11"></td>
+            <td><a href="https://www.amazon.de/s?k=iPhone+11&ref=nb_sb_noss_2/">BUY HERE</a></td>
+        </tr>
+       
+        <tr>
+            <th>Samsung Galaxy Note 20 Ultra</th>
+            <td>The best Android phone money can buy</td>
+            <td>The Samsung Galaxy Note 20 Ultra is pricey at $1,299 but no other big-screen phone can do as much as this phablet. You get a gorgeous 6.9-inch OLED display with a dynamic 120Hz refresh rate, as well as lots of new S Pen upgrades, ranging from new air gestures to a smoother 9 ms response time. Plus, the Note 20 Ultra packs one of the most versatile camera setups ever, including a 108MP main sensor, a whopping 50x Space Zoom and a dedicated laser autofocus sensor to reduce blur.</td>
+            <th>PRICE €939</th>
+            <td><img onmouseover="toggleShowImages(this)" src="images/SamsungGalaxyNote20Ultra.jpg" alt="Samsung Galaxy Note 20 Ultra"></td>
+            <td><a href="https://www.amazon.de/s?k=Samsung+Galaxy+Note+20+Ultra&ref=nb_sb_noss_2/">BUY HERE</a></td>
+        </tr>
+
+        <tr>
+            <th>OnePlus 8 Pro</th>
+            <td>The affordable Android flagship</td>
+            <td>The OnePlus 8 Pro is one of the best phones because it packs so many features into a phone that costs less than premium flagships. You get performance that can match any leading phone and a gorgeous display with a fast 120Hz refresh rate for ridiculously smooth scrolling. </td>
+            <th>PRICE €819.06</th>
+            <td><img onmouseover="toggleShowImages(this)" src="images/OnePlus8Pro.jpg"></td>
+            <td><a href="https://www.amazon.de/s?k=OnePlus+8+Pro&ref=nb_sb_noss/">BUY HERE</a></td>
+        </tr>
+
+        <tr>
+            <th>Google Pixel 4a</th>
+            <td>The best affordable overall phone you can buy</td>
+            <td>What makes the new Google Pixel 4a so special is that it offers almost everything you’d desire in a smartphone for just $349. And it’s remarkably compelling for that price.Google’s latest midrange offering contains a gorgeous 5.8-inch OLED screen; solid power from a Snapdragon 730G chipset; clever software features like Call Screen and Google’s handy Recorder live transcription app; and, of course, that marvel of a 12-megapixel camera, which includes perks like Night Sight and Super Res Zoom</td>
+            <th>PRICE €340.20</th>
+            <td><img onmouseover="toggleShowImages(this)" src="images/GooglePixel4a.jpg" alt="Google Pixel 4a"></td>
+            <td><a href="https://www.amazon.de/s?k=Google+Pixel+4a&ref=nb_sb_noss_2/">BUY HERE</a></td>
+        </tr>
+        
+        <tr>
+            <th>iPhone SE 2020</th>
+            <td>The best cheap iPhone</td>
+            <td>The iPhone SE 2020 finishes on the podium of our list of the best smartphones because it delivers exceptional power for under $400. The A13 Bionic chipset inside the new iPhone SE is the very same one you get in the iPhone 11 and iPhone 11 Pro. It's a rare feat to see a flagship processor inside a device that is so inexpensive, and it makes the iPhone SE far and away the finest value in the budget phone segment.</td>
+            <th>PRICE €438.66</th>
+            <td><img onmouseover="toggleShowImages(this)" src="images/iPhoneSE2020.jpg" alt="iPhone SE 2020"></td>
+            <td><a href="https://www.amazon.de/s?k=iPhone+SE+2020&ref=nb_sb_noss_2/">BUY HERE</a></td>
+        </tr>
+    </table>
+
+
+    <div class="info">
+        <label for="example">Enter Message
+        </label>
+        <input id="example" type="text"
+               name="Ntext" size="40">
+        <input id="sent" type="submit"  
+               value="Send"> 
+    </div>
+    <p id="para"></p>
+
+    <div class="map">
+         <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.023697602956!2d8.678539526635696!3d50.1163884402492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0eaf877a7267%3A0x2412cf7329b77ec8!2sShopping%20Center%20MyZeil!5e0!3m2!1sen!2sde!4v1601905817947!5m2!1sen!2sde" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+    </div>
+
+    <button onclick="firstUlDisappear()">Remove First List</button>
+    <button onclick="paintItGreen()">Paint the List with green color!</button>
+
+
+    <h2 id="listTitle">Todo List</h2>
+        <ul id="firstList">
+            <li><p>1st</p></li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+        <ul id="secondList">
+            <li>1st</li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+        <div>
+            <p id="newPar">This text is just for the exercise</p>
+        </div>
+
+    <footer>
+        <p>Smartphone Shop</p>
+        <p>Zeil 106, 60313 Frankfurt am Main</p>
+    </footer>
+
+</body>
+
+<script>
+    window.onclick = function(e)
+    {   var id =  e.target.id;   
+     if (id === 'sent')  
+     { var txt = document.getElementById('example').value    
+       $( "#para" ).empty().append( txt );
+     }
+    }
+  </script>
+
+</html>

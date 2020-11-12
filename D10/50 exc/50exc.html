@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+        body {
+            /*width: 100%; If I add max width my content wont look nice */
+            align-content: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+            background-color: rgb(226, 215, 215);
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .link1{
+            background-color: rgb(154, 235, 208);
+        }
+        .link2{
+            background-color: rgb(221, 163, 218);
+        }
+        .link3{
+            background-color: bisque;
+        }
+
+        .text-below{
+            border: 10px solid pink;
+            background-color: rgb(247, 229, 232);
+            border-radius: 7px;
+            padding-left: 10px;     
+            margin-top: 20px;    
+        }
+        .picture-box{
+            margin-bottom: 20px;
+        }
+        .hide {
+        display:none;
+        }
+        td {
+            border: 6px solid rgb(141, 192, 168);
+        }
+        .bordertr {
+            border: 6px dotted rgb(211, 120, 120)
+        }
+        table {
+            border-collapse: collapse; 
+        }
+        footer{
+            background-color: white;
+            text-align: center;
+            padding:10px 15px;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fine accessories</h1>
+
+    <ol class="hide">
+        <li>Home accessories</li>
+        <li>Necklaces</li>
+        <li>Bracelets</li>
+    </ol>
+
+    <table class="picture-box">
+        <tr class="bordertr"> 
+            <td>Lorem, ipsum dolor sit amet</td>
+            <td>Lorem, ipsum dolor sit amet</td>
+            <td>Lorem, ipsum dolor sit amet</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://kreativfieber.de/wp-content/uploads/2015/08/Deko-und-Accessoires-aus-Kork.jpg" height="450px" width="450px">
+            </td>
+            <td>
+                <img src="https://www.aquae-jewels.com/wp-content/uploads/2020/08/inspiration-desktop-min.jpg" 
+                alt="Necklace" height = "450px" width="450px">
+            </td>
+            <td>
+                <img src="https://www.hurleyburley.com/wp-content/uploads/2017/11/original_personalised-yellow-gold-bee-bracelet-1000x1000.jpg"
+                height="450px" width="450px" alt="bracelets">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="1">You can <a href="https://www.amazon.com" class="link1">buy here!</a> amet consectetur adipisicing elit. Sunt, delectus!Eum facilis, dolorem tempore autem voluptas necessitatibus</td>
+            <td>Visit to <a href="https://www.amazon.com" class="link2">buy here!</a>Voluptate saepe incidunt praesentium velit nobis, sapiente, laboriosam culpa assumenda, laudantium corporis ratione? Eum facilis, dolorem tempore autem voluptas necessitatibus.</td>
+            <td>You can <a href="https://www.amazon.com" class="link3">buy here!</a>Sit amet consectetur adipisicing elit. Sunt, delectus!Eum facilis, dolorem tempore autem voluptas necessitatibus</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Voluptate saepe incidunt praesentium velit nobis, sapiente, laboriosam culpa assumenda, laudantium corporis ratione? Eum facilis, dolorem tempore autem voluptas necessitatibus.</td>
+            <td>Sit amet consectetur adipisicing elit. Sunt, delectus!Eum facilis, dolorem tempore autem voluptas necessitatibus</td>
+            <td>Voluptate saepe incidunt praesentium velit nobis, sapiente, laboriosam culpa assumenda, laudantium corporis ratione? Eum facilis, dolorem tempore autem voluptas necessitatibus</td>
+        </tr> 
+    </table>
+
+    <hr>
+    
+    <div class="text-below">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Facere nobis alias laudantium rem labore 
+            consequuntur ducimus adipisci, itaque recusandae ab 
+            libero eos doloribus explicabo dolor deserunt exercitationem odit vel ullam.</p>
+
+        <ul>
+            <li>Facere nobis alias laudantium rem labore</li>
+            <li>libero eos doloribus explicabo</li>
+            <li>dolor deserunt exercitationem</li>
+        </ul>
+    </div>
+
+    <footer>dolor deserunt exercitationem +123 33435 32 Germany</footer>
+</body>
+<script>
+    let x = "John";
+    let y = "Doe";
+    console.log(x + "<>" + y);
+
+    let object = {
+        name: "John",
+        surname:"Doe",
+        email:"johndoe@gmail.com"
+    }
+
+    delete object.email;
+    console.log(object);
+
+    let myArray = ["Luna","Bella","Harry","John","Ana","Polly","Tom","Peter","Luka","Tony"];
+    console.log(myArray);
+
+    const array_length = 50;
+    const randomArray = [];
+
+    for(let i = 0; i<array_length; i++){
+        randomArray.push(Math.floor(Math.random()*50))
+    }
+    console.log(randomArray);
+
+    Math.min(...randomArray);
+    Math.max(...randomArray);
+
+    const arrayofarrays = [
+        [85,96,66,945,38,599,61,82,73,10],
+        [30,48,22,311,821,79,5,31,43,54]
+    ];
+
+    console.log(arrayofarrays.length);
+
+    let oneArray = ["one","two"];
+    let twoArray = ["three","four","five"];
+
+    let bothArrays = oneArray.concat(twoArray);
+    console.log(bothArrays);
+
+    bothArrays.indexOf("two");
+
+    let removeLast = twoArray.pop();
+    console.log(removeLast);
+    
+    const innerelement = document.getElementsByTagName("td");
+
+    innerelement.forEach(element => {
+        element.textContent = "";
+    });
+
+innerelement[1];
+</script>
+
+</html>
