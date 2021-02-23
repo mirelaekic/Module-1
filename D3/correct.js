@@ -17,10 +17,10 @@ Create an object containing your name, surname, email address and age.
 */
 /* WRITE YOUR CODE HERE */
 let myself = {
-    name: "Simona",
-    surname: "Cossai",
-    email: "cossaisimona@gmail.com",
-    age: 19
+    name: "Mirela",
+    surname: "Ekic",
+    email: "mirelaek@gmail.com",
+    age: 22
 }
 
 /* EXERCISE 3
